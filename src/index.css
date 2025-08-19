@@ -1,0 +1,160 @@
+:root {
+  --fa-style-family-classic: "Font Awesome 6 Free";
+  --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
+  color: white !important;
+}
+.img-bg{
+
+    background-image: linear-gradient(rgb(0, 0, 0,.6)),url('./assets/bg.jpg');
+    background-size: cover;
+    background-position: left;
+    height: 100vh;}
+.main-clr {
+  background-color: #1abc9c;
+}
+.second-clr {
+  background-color: #2c3e50;
+}
+.clr {
+  color: white !important;
+}
+.font-xl {
+  font-size: 26px !important;
+}
+.nav-link {
+  color: white !important;
+  font-size: 20px !important;
+  font-weight: bold !important;
+}
+.home {
+  min-height: 88vh;
+}
+.footer {
+   min-height: 30vh; 
+
+}
+.copy {
+  background-color: #000;
+}
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(26, 188, 156, 0.9);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 40px;
+border-radius: 12px;
+
+}
+.image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+.image-container img{
+border-radius: 12px;
+}
+.image-container i{
+font-size: 80px;
+}
+.nav-link.active {
+  color: white !important; /* أو أي لون تريده */
+  background-color: #1abc9c !important; /* لو عايز خلفية */
+  border-radius: 8px; /* اختياري */
+}
+.contact{
+  min-height: 70vh;
+}
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 0em rgba(13, 110, 253, .25) !important;
+}
+
+.head-input{
+    opacity: 0;
+transform: translateY(0px);
+transition: all .4s ease, all .4s ease;
+position: absolute;
+}
+
+.head-input.show {
+opacity: 1;
+transform: translateY(-30px);
+}
+
+.skills img.skill-icon {
+  height: 70px;        /* حجم موحّد */
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.skills img.skill-icon:hover {
+  transform: scale(1.2); /* تكبير بسيط عند المرور */
+}
+
+.project-img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.inner:hover .project-img {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* لون overlay */
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.inner:hover .overlay {
+  opacity: 1;
+}
+.footer .social-icon {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.footer .social-icon:hover {
+  background-color: #1abc9c;
+  color: white !important;
+  transform: translateY(-3px);
+}.back-to-top {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.back-to-top:hover {
+  background-color: #1abc9c;
+  transform: scale(1.1);
+}
