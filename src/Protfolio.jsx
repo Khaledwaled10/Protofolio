@@ -6,10 +6,11 @@ import smartlogin from '../src/assets/smartlogin.png';
 import weather from '../src/assets/weather.png';
 import games from '../src/assets/games.png';
 import social from '../src/assets/social.png';
+import e from '../src/assets/e1.png';
 
 export default function Portfolio() {
   const projects = [
-    { img: mealfiy, link: "https://e-commrce-five.vercel.app/", title: "E-commerce Website" },
+    { img: e, link: "https://e-commrce-five.vercel.app/", title: "E-commerce Website" },
     { img: social, link: "https://social-vert-tau.vercel.app/", title: "Social Media Clone" },
     { img: games, link: "https://khaledwaled10.github.io/Games/", title: "Games Website" },
     { img: weather, link: "https://khaledwaled10.github.io/Weather/", title: "Weather App" },
